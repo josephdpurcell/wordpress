@@ -1,0 +1,24 @@
+---
+engines:
+  phpmd:
+    enabled: true
+    config:
+      file_extensions: "php"
+      rulesets: ".phpmd.xml"
+  phpcodesniffer:
+    enabled: true
+    config:
+      file_extensions: "php"
+      encoding: utf-8
+      standard: ".phpcs/WordPress/ruleset.xml"
+      ignore_warnings: true
+ratings:
+  paths:
+  - "src/wp-admin/**.php"
+  - "src/wp-includes/**.php"
+  - "src/*.php"
+exclude_paths:
+- .phpcs
+- "src/wp-content/**/*"
+- tests
+- tools

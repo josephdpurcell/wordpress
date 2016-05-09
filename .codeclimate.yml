@@ -14,6 +14,7 @@ engines:
       ignore_warnings: true
 ratings:
   paths:
+  # Check all in src except wp-content since it has themes.
   - "src/wp-admin/**.php"
   - "src/wp-includes/**.php"
   - "src/*.php"
@@ -22,3 +23,6 @@ exclude_paths:
 - "src/wp-content/**/*"
 - tests
 - tools
+# Exclude directories that cause problems with CodeSniffer
+- "src/wp-includes/ID3"
+- "**/*.js"

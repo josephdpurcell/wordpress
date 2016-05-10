@@ -19,10 +19,10 @@ ratings:
   - "src/wp-includes/**.php"
   - "src/*.php"
 exclude_paths:
-- .phpcs
+- "**.phpcs"
 - "src/wp-content/**/*"
-- tests
-- tools
+- "tests**/*"
+- "tools**/*"
 # Exclude directories that cause problems with CodeSniffer
 - "src/wp-includes/ID3"
 - "**/*.js"

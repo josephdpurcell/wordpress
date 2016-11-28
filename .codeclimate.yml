@@ -10,7 +10,7 @@ engines:
     config:
       file_extensions: "php"
       encoding: utf-8
-      standard: ".phpcs/WordPress/ruleset.xml"
+      standard: "WordPress"
       ignore_warnings: true
 ratings:
   paths:
